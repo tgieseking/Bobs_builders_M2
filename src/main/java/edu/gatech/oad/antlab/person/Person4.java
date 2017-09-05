@@ -36,9 +36,10 @@ public class Person4 {
      */
     private String calc(String input) {
         //Person 4 put your implementation here
-        for (int i = 0; i < input; i++) {
+        String newString = "";
+        for (int i = 0; i < input.length(); i++) {
             int nextValue = (int) input.charAt(i) + 1;
-            input.charAt(i) = (char) nextValue;
+            newString += (char) nextValue;
         }
         return input;
     }
