@@ -33,7 +33,8 @@ public class Person2 {
 	  //Person 2 put your implementation here
         String newStr = "";
         while (input.length() > 0) {
-            int rand = Random.nextInt(input.length());
+			Random randGen = new Random();
+            int rand = randGen.nextInt(input.length());
             newStr += input.charAt(rand);
             if (rand == input.length() - 1) {
                 input = input.substring(0, rand);
