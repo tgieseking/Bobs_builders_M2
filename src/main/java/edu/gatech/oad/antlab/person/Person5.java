@@ -17,7 +17,7 @@ public class Person5 {
 	 * @param pname the person's real name
 	 */
   public Person5(String pname) {
-	name = 'Connie Huang';
+	name = "Connie Huang";
   }
 	/**
 	 * This method should take the string
@@ -32,12 +32,22 @@ public class Person5 {
 	private String calc(String input) {
 	  //Person 5 put your implementation here
 		char[] myInput = input.toCharArray();
-		char[] output = new Char[input.length()];
-		for (int i = 0; count< input.length; count++) {
-			output[i+2] = myInput[i];
+		char[] output = new char[input.length()];
+		for (int i = 0; i< input.length(); i++) {
+			if ((i+2) == input.length()) {
+				output[0] = myInput[i];
+			}
+			else if ((i+2) == input.length() +1) {
+				output[1] = myInput[i];
+			}
+			else {
+				output[i+2] = myInput[i];
+			}
 
 		}
-	  return output;
+		String myOutput = new String(output);
+
+	    return myOutput;
 	}
 
 	/**
