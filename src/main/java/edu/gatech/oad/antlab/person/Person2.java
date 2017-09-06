@@ -36,7 +36,7 @@ public class Person2 {
             int rand = Random.nextInt(input.length());
             newStr += input.charAt(rand);
             if (rand == input.length() - 1) {
-                input = input.substring(0, rand)
+                input = input.substring(0, rand);
             } else {
                 input = input.substring(0, rand) + input.substring(rand + 1, input.length());
             }
